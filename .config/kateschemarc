@@ -1,0 +1,204 @@
+[$Version]
+update_info=fonts_kate.upd:Plasma_Fonts_Kate
+
+[Breeze Dark]
+dummy=prevent-empty-group
+
+[Darcula]
+Color Background=43,43,43
+Color Code Folding=58,58,58
+Color Highlighted Bracket=59,81,77
+Color Highlighted Line=50,50,50
+Color Icon Bar=49,51,53
+Color Indentation Line=55,55,55
+Color Line Number=136,136,136
+Color MarkType 1=219,219,219
+Color MarkType 2=58,35,35
+Color MarkType 3=58,35,35
+Color MarkType 4=58,35,35
+Color MarkType 5=45,96,153
+Color MarkType 6=82,80,58
+Color MarkType 7=188,63,60
+Color Modified Lines=165,194,97
+Color Replace Highlight=36,110,0
+Color Saved Lines=41,86,34
+Color Search Highlight=21,82,33
+Color Selection=33,66,131
+Color Separator=50,50,50
+Color Spelling Mistake Line=134,127,39
+Color Tab Marker=80,80,80
+Color Template Background=214,210,208
+Color Template Editable Placeholder=186,249,206
+Color Template Focused Editable Placeholder=186,249,206
+Color Template Not Editable Placeholder=247,230,230
+Color Word Wrap Marker=192,192,192
+Font=Ubuntu Mono,12,-1,5,50,0,0,0,0,0,Regular
+dummy=prevent-empty-group
+
+[KDE]
+Font=Ubuntu Mono,11,-1,5,50,0,0,0,0,0
+dummy=prevent-empty-group
+
+[Normal]
+Color Background[$d]
+Color Code Folding[$d]
+Color Current Line Number[$d]
+Color Highlighted Bracket[$d]
+Color Highlighted Line[$d]
+Color Icon Bar[$d]
+Color Indentation Line[$d]
+Color Line Number[$d]
+Color MarkType 1[$d]
+Color MarkType 2[$d]
+Color MarkType 3[$d]
+Color MarkType 4[$d]
+Color MarkType 5[$d]
+Color MarkType 6[$d]
+Color MarkType 7[$d]
+Color Modified Lines[$d]
+Color Replace Highlight[$d]
+Color Saved Lines[$d]
+Color Search Highlight[$d]
+Color Selection[$d]
+Color Separator[$d]
+Color Spelling Mistake Line[$d]
+Color Tab Marker[$d]
+Color Template Background[$d]
+Color Template Editable Placeholder[$d]
+Color Template Focused Editable Placeholder[$d]
+Color Template Not Editable Placeholder[$d]
+Color Word Wrap Marker[$d]
+Font=Ubuntu Mono,12,-1,5,50,0,0,0,0,0
+dummy=prevent-empty-group
+
+[Printing]
+dummy=prevent-empty-group
+
+[Solarized (dark)]
+Font=Ubuntu Mono,12,-1,5,50,0,0,0,0,0,Regular
+dummy=prevent-empty-group
+
+[Vim (dark)]
+Color Background[$d]
+Color Code Folding[$d]
+Color Current Line Number[$d]
+Color Highlighted Bracket[$d]
+Color Highlighted Line[$d]
+Color Icon Bar[$d]
+Color Indentation Line[$d]
+Color Line Number[$d]
+Color MarkType 1[$d]
+Color MarkType 2[$d]
+Color MarkType 3[$d]
+Color MarkType 4[$d]
+Color MarkType 5[$d]
+Color MarkType 6[$d]
+Color MarkType 7[$d]
+Color Modified Lines[$d]
+Color Replace Highlight[$d]
+Color Saved Lines[$d]
+Color Search Highlight[$d]
+Color Selection[$d]
+Color Spelling Mistake Line[$d]
+Color Tab Marker[$d]
+Color Template Background[$d]
+Color Template Editable Placeholder[$d]
+Color Template Focused Editable Placeholder[$d]
+Color Template Not Editable Placeholder[$d]
+Color Word Wrap Marker[$d]
+Font=Ubuntu Mono,12,-1,5,50,0,0,0,0,0
+dummy=prevent-empty-group
+
+[monokai]
+Color Background=6,51,64
+Color Code Folding=148,202,239
+Color Highlighted Bracket=83,85,72
+Color Highlighted Line=67,69,58
+Color Icon Bar=6,51,64
+Color Indentation Line=210,210,210
+Color Line Number=34,31,30
+Color MarkType 1=0,0,255
+Color MarkType 2=255,0,0
+Color MarkType 3=255,255,0
+Color MarkType 4=255,0,255
+Color MarkType 5=160,160,164
+Color MarkType 6=0,255,0
+Color MarkType 7=255,0,0
+Color Modified Lines=247,230,230
+Color Replace Highlight=0,255,0
+Color Saved Lines=186,249,206
+Color Search Highlight=255,231,146
+Color Selection=87,90,75
+Color Separator=137,136,135
+Color Spelling Mistake Line=191,3,3
+Color Tab Marker=210,210,210
+Color Template Background=214,210,208
+Color Template Editable Placeholder=186,249,206
+Color Template Focused Editable Placeholder=118,218,152
+Color Template Not Editable Placeholder=247,230,230
+Color Word Wrap Marker=237,237,237
+Font=Ubuntu Mono,12,-1,5,50,0,0,0,0,0
+dummy=prevent-empty-group
+
+[obsidian]
+Color Background=0,23,37
+Color Code Folding=53,53,53
+Color Highlighted Bracket=41,49,52
+Color Highlighted Line=22,25,29
+Color Icon Bar=0,23,37
+Color Indentation Line=41,49,52
+Color Line Number=129,150,154
+Color MarkType 1=0,101,155
+Color MarkType 2=138,11,11
+Color MarkType 3=166,170,0
+Color MarkType 4=68,17,111
+Color MarkType 5=0,101,155
+Color MarkType 6=0,136,11
+Color MarkType 7=138,11,11
+Color Modified Lines=239,242,132
+Color Replace Highlight=224,226,228
+Color Saved Lines=87,116,48
+Color Search Highlight=107,129,137
+Color Selection=64,78,81
+Color Separator=52,63,65
+Color Spelling Mistake Line=251,0,0
+Color Tab Marker=52,63,67
+Color Template Background=214,210,208
+Color Template Editable Placeholder=186,249,206
+Color Template Focused Editable Placeholder=186,249,206
+Color Template Not Editable Placeholder=247,230,230
+Color Word Wrap Marker=129,150,154
+Font=Ubuntu Mono,11.5,-1,5,50,0,0,0,0,0
+dummy=prevent-empty-group
+
+[solcon]
+Color Background=0,23,37
+Color Code Folding=108,113,196
+Color Current Line Number=101,123,131
+Color Highlighted Bracket=7,54,66
+Color Highlighted Line=3,6,7
+Color Icon Bar=0,23,37
+Color Indentation Line=7,54,66
+Color Line Number=101,123,131
+Color MarkType 1=38,139,210
+Color MarkType 2=220,50,47
+Color MarkType 3=181,137,0
+Color MarkType 4=211,54,130
+Color MarkType 5=147,161,161
+Color MarkType 6=133,153,0
+Color MarkType 7=220,50,47
+Color Modified Lines=203,75,22
+Color Replace Highlight=133,153,0
+Color Saved Lines=42,161,152
+Color Search Highlight=181,137,0
+Color Selection=167,227,236
+Color Separator=101,123,131
+Color Spelling Mistake Line=220,50,47
+Color Tab Marker=147,161,161
+Color Template Background=7,54,66
+Color Template Editable Placeholder=7,54,66
+Color Template Focused Editable Placeholder=7,54,66
+Color Template Not Editable Placeholder=7,54,66
+Color Word Wrap Marker=101,123,131
+Font=Ubuntu Mono,12,-1,5,50,0,0,0,0,0,Regular
+dummy=prevent-empty-group
