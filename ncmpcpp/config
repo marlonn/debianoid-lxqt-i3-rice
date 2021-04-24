@@ -1,0 +1,139 @@
+#	  ___     ___    ___ ___   _____    ___  _____   _____
+#	/' _ `\  /'___\/' __` __`\/\ '__`\ /'___/\ '__`\/\ '__`\
+#	/\ \/\ \/\ \__//\ \/\ \/\ \ \ \L\ /\ \__\ \ \L\ \ \ \L\ \
+#	\ \_\ \_\ \____\ \_\ \_\ \_\ \ ,__\ \____\ \ ,__/\ \ ,__/
+#	 \/_/\/_/\/____/\/_/\/_/\/_/\ \ \/ \/____/\ \ \/  \ \ \/
+#	                             \ \_\         \ \_\   \ \_\
+#	                              \/_/          \/_/    \/_/
+#
+# sources:
+# www.reddit.com/r/unixporn/comments/7c4zj9/openbox_subdued/
+# github.com/crysterbater/dot-shots-part-deux/blob/master/.ncmpcpp/config
+
+# mpd
+mpd_port = "6600"
+
+browser_display_mode = "columns"
+search_engine_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+user_interface = "classic"
+follow_now_playing_lyrics = "no"
+locked_screen_width_part = "60"
+display_bitrate = "no"
+external_editor = "nano"
+
+#main_window_highlight_color = "white"
+
+progressbar_elapsed_color = "white"
+progressbar_color = "black"
+
+progressbar_look = "━━━"
+#progressbar_look = "─⊙ "
+#progressbar_look = "==="
+
+mouse_support = "yes"
+header_visibility = "yes"
+statusbar_visibility = "yes"
+titles_visibility = "no"
+enable_window_title = "yes"
+#statusbar_color = "white"
+#visualizer_color = "white"
+
+now_playing_prefix = "$b"
+now_playing_suffix = "$8$/b"
+
+#song_columns_list_format = "(6)[]{} (23)[blue]{a} (26)[green]{t|f} (40)[green]{b} (4)[blue]{l}"
+
+#color1 = "white"
+#color2 = "blue"
+
+#uncomment both statement's below if you want to display the albumart
+
+#execute_on_song_change="~/.ncmpcpp/art.sh"
+#song_list_format = "                       $2%t $R$5%a "
+
+song_status_format = "$b$7 ♫ $2%a $4⟫$3⟫ $8%t $4⟫$3⟫ $5%b "
+song_window_title_format = " {%a} - {%t}"
+
+[playlist]
+playlist_shorten_total_times = "yes"
+playlist_display_mode = "classic"
+song_list_format = "$4%l $7%a $8%t"
+
+##### columns settings #####
+##
+## syntax of song columns list format is "column column etc."
+##
+## - syntax for each column is:
+##
+## (width of column)[column's color]{displayed tag}
+##
+## Note: Width is by default in %, if you want a column to
+## have fixed size, add 'f' after the value, e.g. (10)[white]{a}
+## will be the column that take 10% of screen (so the real column's
+## width will depend on actual screen size), whereas (10f)[white]{a}
+## will take 10 terminal cells, no matter how wide the screen is.
+##
+## - color is optional (if you want the default one, type [])
+##
+## Note: You can give a column additional attributes by putting appropriate
+## character after displayed tag character. Available attributes are:
+##
+## - r - column will be right aligned
+## - E - if tag is empty, empty tag marker won't be displayed
+##
+## E.g. {lr} will give you right aligned column of lengths.
+##
+#
+###### old format:
+#Song Format
+#
+#For song format you can use:
+
+# %l - length
+# %f - filename
+# %D - directory
+# %a - artist
+# %A - album artist
+# %t - title
+# %b - album
+# %y - date
+# %n - track number (01/12 -> 01)
+# %N - full track info (01/12 -> 01/12)
+# %g - genre
+# %c - composer
+# %p - performer
+# %d - disc
+# %C - comment
+# %P - priority
+# $R - begin right alignment
+#
+# You can also put them in { } and then they will be displayed only if all requested values are available and/or define alternate value with { }|{ } e.g. {%a - %t}|{%f} will check if artist and title tags are available and if they are, display them. Otherwise it'll display filename.
+#
+# Note: If you want to set limit on maximal length of a tag, just put the appropriate number between % and character that defines tag type, e.g. to make album take max. 20 terminal cells, use '%20b'.
+#
+# Note: Format that is similar to "%a - %t" (i.e. without any additional braces) is equal to "{%a - %t}", so if one of the tags is missing, you'll get nothing.
+#
+# Text can have different color than the main window, e.g. if you want length to be green, write $3%l$9.
+
+# Available values for colors:
+#
+# - 0 - default window color (discards all other colors)
+# - 1 - black
+# - 2 - red
+# - 3 - green
+# - 4 - yellow
+# - 5 - blue
+# - 6 - magenta
+# - 7 - cyan
+# - 8 - white
+# - 9 - end of current color
+#
+# Note: colors can be nested, so if you write $2some$5text$9, it'll disable only usage of blue color and make red the current one.
+# 
+# examples and old configs:
+#song_list_format = "$4%l $R$7%a $8%t   "
+#song_list_format = "{$8%n▕ $9}{$2%a - $9}{$4%t$9}|{$5%f$9}$R{$5▕ %b$9}{$8▕ %l$9}"
+#song_columns_list_format = "(5f)[green]{n} (22)[white]{a} (34)[white]{t} (25)[white]{b} (7f)[green]{lr}"
