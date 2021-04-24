@@ -151,8 +151,8 @@ client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #d9d9d9
 bindsym $mod+Return exec lxterminal
 
 # application launcher
-#bindsym $mod+d exec rofi -show run
-bindsym $mod+d exec lxqt-runner
+bindsym $mod+d exec rofi -show run
+#bindsym $mod+d exec lxqt-runner
 
 # exit-script - suspend, shutdown etc.
 bindsym $mod+x exec "'i3-exit'"
@@ -181,19 +181,12 @@ bindsym XF86AudioMute        exec ~/.config/i3/mute-volume.sh
 ################## autostart  ##################################################
 ################################################################################
 
-#exec sleep 10
-
 #exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id pulseaudio
-exec --no-startup-id mpd ~/.mpd/mpd.conf
 
-#exec --no-startup-id xsettingsd
-
-#exec xrdb ~/.Xresources
-#exec --no-startup-id ~/.fehbg
-exec --no-startup-id nitrogen --restore
-
-exec --no-startup-id nm-applet
+#exec --no-startup-id nitrogen --restore
+#exec --no-startup-id mpd ~/.mpd/mpd.conf
+#exec --no-startup-id nm-applet
 #exec --no-startup-id klipper
 
 exec --no-startup-id xset s off
@@ -203,3 +196,11 @@ exec --no-startup-id xset s noblank
 for_window [class="pcmanfm-qt"] floating disable
 for_window [class="lxqt-config-session"] floating enable
 for_window [class="lxqt-notificationd"] floating enable
+
+################################################################################
+################## without desktop environment  ################################
+################################################################################
+
+xset r rate 200 45
+#exec --no-startup-id xsettingsd
+#exec --no-startup-id ~/.fehbg
