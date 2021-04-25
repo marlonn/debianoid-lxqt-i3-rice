@@ -201,10 +201,9 @@ for_window [class="lxqt-notificationd"] floating enable
 ################## without desktop environment  ################################
 ################################################################################
 
-xset r rate 200 45
-#exec --no-startup-id xsettingsd
-#exec --no-startup-id ~/.fehbg
-
+exec xset r rate 200 45
+exec --no-startup-id xsettingsd
+exec --no-startup-id nitrogen --restore
 bar {
-    status_command i3bar
+    status_command i3status
 }
