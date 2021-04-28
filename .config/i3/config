@@ -116,6 +116,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+hide_edge_borders vertical
+
 ################################################################################
 ################## gaps-specific configs #######################################
 ################################################################################
@@ -123,10 +125,7 @@ bindsym $mod+r mode "resize"
 # Necessary for i3-gaps to work properly (pixel can be any value)
 for_window [class="^.*"] border pixel 3
 
-# Smart Gaps
 #smart_gaps on
-
-# Smart Borders
 #smart_borders on
 
 ################################################################################
@@ -135,11 +134,19 @@ for_window [class="^.*"] border pixel 3
 
 # child_border old: #063340 (what is this anyway?)
 
-# Some color adjustments
-# class                 border  backgr. text    indicator child_border
-client.focused_inactive #001725 #212121 #d9d9d9 #0d1010 #001725
-client.unfocused        #001725 #212121 #d9d9d9 #424242 #001725
-client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #d9d9d9
+exec --no-startup-id xrdb ~/.Xresources
+
+set_from_resource $bg         background  #063340
+set_from_resource $black      color0      #212121
+set_from_resource $white      color15     #d9d9d9
+set_from_resource $cyan       color6      #063340
+set_from_resource $lightgrey  color14     #cecece
+set_from_resource $darkgrey   color8      #424242
+
+# class                 border  backgr.    text    indicator   child_border
+client.focused_inactive $black  $black     $white  $black      $black
+client.unfocused        $black  $black     $white  $darkgrey   $black
+client.focused          $white  $lightgrey $black  $white      $white
 
 ################################################################################
 ################## launch applications  ########################################
@@ -181,13 +188,7 @@ bindsym XF86AudioMute        exec ~/.config/i3/mute-volume.sh
 ################## autostart  ##################################################
 ################################################################################
 
-#exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id pulseaudio
-
-#exec --no-startup-id nitrogen --restore
-#exec --no-startup-id mpd ~/.mpd/mpd.conf
-#exec --no-startup-id nm-applet
-#exec --no-startup-id klipper
+exec --no-startup-id nitrogen --restore
 
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
