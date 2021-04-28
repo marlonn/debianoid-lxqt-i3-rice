@@ -6,4 +6,4 @@ DE: LXQt
 
 WM: i3
 
-Rice for Debian-based Linux distros. Download repository, then run cp.sh to apply it to current system.
+Rice for Debian-based Linux distros. Download repository, then run install-rice.sh to apply it to current system.
